@@ -1,0 +1,8 @@
+@keyframes sidebarOut {
+  from {
+    right: -250px;
+  }
+  to {
+    right: 0px;
+  }
+}
