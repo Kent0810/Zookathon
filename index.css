@@ -48,7 +48,7 @@ a {
   width: 100%;
   color: #fff;
   z-index: 2;
-  overflow-y: hidden;
+  overflow-x: hidden;
 }
 .showcase video {
   position: absolute;
@@ -174,6 +174,16 @@ a {
 }
 .wrapper .row-1 {
   justify-content: flex-start;
+}
+.row-1 section img {
+  width: 100%;
+  height: 350px;
+  opacity: 0.9;
+}
+.row-2 section img {
+  width: 100%;
+  height: 350px;
+  opacity: 0.9;
 }
 .wrapper .row-2 {
   justify-content: flex-end;

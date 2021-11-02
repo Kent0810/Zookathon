@@ -30,3 +30,5 @@ function reveal(){
         }
     }
 }
+
+//parallax effect
