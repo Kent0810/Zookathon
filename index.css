@@ -175,16 +175,14 @@ a {
 .wrapper .row-1 {
   justify-content: flex-start;
 }
+.row-2 section img,
 .row-1 section img {
   width: 100%;
   height: 350px;
   opacity: 0.9;
+  transition: all 0.3s ease;
 }
-.row-2 section img {
-  width: 100%;
-  height: 350px;
-  opacity: 0.9;
-}
+
 .wrapper .row-2 {
   justify-content: flex-end;
 }
@@ -196,15 +194,21 @@ a {
   position: relative;
 }
 /* cái dấu > sau mỗi box  */
-.wrapper .row section::before {
+.wrapper .row-1 section::before {
   position: absolute;
-  content: "";
-  height: 15px;
-  width: 15px;
-  background: black;
-  top: 28px;
+  content: ">";
+  font-size: 2rem;
+  font-weight: bolder;
+  top: 12px;
   z-index: -1;
-  transform: rotate(45deg);
+}
+.wrapper .row-2 section::before {
+  position: absolute;
+  content: "<";
+  font-size: 2rem;
+  font-weight: bolder;
+  top: 12px;
+  z-index: -1;
 }
 /* vi tri cua dau > */
 .row-1 section::before {
@@ -258,15 +262,24 @@ a {
   margin: 10px 0 17px 0;
 }
 /* Read More btn */
+.bottom-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
 .row section .bottom a {
   text-decoration: none;
   background: #355e3b;
   color: #fff;
+  margin-top: 10px;
   padding: 7px 15px;
   border-radius: 5px;
   /* font-size: 17px; */
   font-weight: 400;
   transition: all 0.3s ease;
+}
+.row section img:hover {
+  transform: scale(0.9);
 }
 .row section .bottom a:hover {
   transform: scale(0.97);
