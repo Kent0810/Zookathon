@@ -51,6 +51,9 @@
   .row-1 section .icon {
     left: -60px;
   }
+  .flip-card-back p {
+    font-size: 0.8rem;
+  }
 }
 @media (max-width: 440px) {
   .wrapper .center-line,
@@ -60,5 +63,11 @@
   }
   .wrapper .row {
     margin: 10px 0;
+  }
+}
+@media screen and (min-width: 700px) {
+  .about-us {
+    background-image: url(./Image/bg2.png);
+    background-size: contain;
   }
 }

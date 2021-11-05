@@ -19,7 +19,7 @@ function reveal(){
     for(var i =  0;i<reveals.length;i++){
         var windowHeight = window.innerHeight;
         var revealTop = reveals[i].getBoundingClientRect().top;
-        var revealPoint =150;
+        var revealPoint =120;
 
         if(revealTop<windowHeight-revealPoint){
             reveals[i].classList.add('active');
@@ -31,4 +31,10 @@ function reveal(){
     }
 }
 
-//parallax effect
+//Translate
+function translate(){
+    let infromation  = document.querySelectorAll(".infromation");
+    for(var i = 0 ;i<infromation.length;i++){
+        infromation[i].innerHTML = "ADU"
+    }
+}
