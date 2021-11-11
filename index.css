@@ -316,7 +316,8 @@ a {
 }
 
 /* Do an horizontal flip when you move the mouse over the flip box container */
-.flip-card:hover .flip-card-inner {
+.flip-card:hover .flip-card-inner,
+.flip-card:active .flip-card-inner {
   transform: rotateY(180deg);
 }
 
@@ -344,4 +345,25 @@ a {
   background: #282c35;
   color: white;
   transform: rotateY(180deg);
+}
+.report {
+  background: url(./Image/bg3.png);
+  height: 500px;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.report p {
+  max-width: 800px;
+}
+.rpbtn {
+  margin-top: 20px;
+}
+.report p,
+.logo {
+  color: white;
 }

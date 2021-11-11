@@ -70,4 +70,7 @@
     background-image: url(./Image/bg2.png);
     background-size: contain;
   }
+  .report {
+    background-attachment: fixed;
+  }
 }
