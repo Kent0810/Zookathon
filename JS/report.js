@@ -1,17 +1,3 @@
-// const transtion_el = document.querySelector('.transition')
-//     const anchors = document.querySelectorAll('.rpbtn')
-//     transtion_el.classList.remove('is-active')
-//     for (let i = 0;i<anchors.length;i++){
-//         anchors[i].addEventListener('click',(e)=>{
-//             transtion_el.classList.add('is-active')
-//             e.preventDefault();
-//             setTimeout(()=>{
-//                 transtion_el.classList.remove('is-active')
-//                 let target = e.target.href;
-//                 window.location.href = target;
-//             },500);
-//         })
-//     }
 let toggle = document.querySelector(".fa-bars");
 let sidebar = document.querySelector(".sidebar");
 let x = document.querySelector(".fa-chevron-right");
@@ -30,3 +16,28 @@ function InitialSlideIn(){
     },1000); 
 }
 InitialSlideIn();
+
+const myForm =document.getElementById('myForm');
+const inpFile =document.getElementById('inpFile');
+
+myForm.addEventListener('submit',e=>{
+    e.preventDefault();
+    const endpoint = "upload.php";
+    const formData =new FormData();
+    // console.log(inpFile.files)
+    formData.append("inpFile",inpFile.files[0]);  
+    fetch(endpoint,{
+        method: "POST",
+        body: formData
+    })
+
+
+
+});//stop redirecting / refrreshing
+
+const btn = document.querySelector(".fa-upload");
+btn.addEventListener("click",()=>{
+    setTimeout(()=>{
+        alert("Đã Gửi !")
+    },500)
+})

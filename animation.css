@@ -32,7 +32,8 @@
   z-index: 101;
   background: url(./Image/Load2.gif);
   background-size: contain;
-  background-repeat: repeat-x;
+  background-repeat: repeat;
+
   transition: 1s ease-out;
 }
 .transition-2.is-active {

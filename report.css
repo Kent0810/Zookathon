@@ -8,3 +8,84 @@
   height: 100%;
   z-index: 0;
 }
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  z-index: 1;
+}
+
+.fileLabel {
+  color: black;
+  height: 60px;
+  border-radius: 0.6rem;
+  width: 500px;
+  background-color: whitesmoke;
+  margin-top: 50px;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 1px solid black;
+}
+.fa-upload {
+  font-size: 1.6rem;
+}
+.fa-upload:hover {
+  transform: scale(0.8);
+}
+input[type="file"] {
+  display: none;
+}
+button[type="submit"] {
+  display: none;
+}
+.box,
+.box h1,
+.rp_title {
+  z-index: 1;
+}
+.box h1 {
+  color: black;
+  margin-top: 20px;
+  font-size: 1.2rem;
+}
+.box img {
+  border-top-left-radius: 0.7rem;
+  border-top-right-radius: 0.7rem;
+  border-bottom: 1px solid black;
+  width: 400px;
+  height: 300px;
+}
+.box {
+  width: 400px;
+  height: 400px;
+  background-color: white;
+  border-radius: 0.7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 0 0 4px black, inset 0 2px 0 rgba(0, 0, 0, 0.08),
+    0 3px 0 4px rgba(0, 0, 0, 0.05);
+}
+.rp_title {
+  margin-bottom: 20px;
+  color: white;
+  text-align: center;
+}
+.rp_title h1 {
+  font-size: 1.5rem;
+}
+
+.shcase {
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.grid-container {
+  z-index: 1;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
