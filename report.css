@@ -46,9 +46,11 @@
 }
 
 .shcase {
+  width: 100%;
   flex-direction: column;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  align-content: center;
 }
 .grid-container {
   z-index: 1;

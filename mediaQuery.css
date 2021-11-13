@@ -1,4 +1,7 @@
 @media screen and (max-width: 700px) {
+  .rp_title {
+    margin-top: 100px;
+  }
   .infromation {
     display: none;
   }
@@ -66,6 +69,11 @@
   }
 }
 @media screen and (min-width: 700px) {
+  .toggle,
+  .sidebar {
+    display: none;
+  }
+
   .about-us {
     background-image: url(./Image/bg2.png);
     background-size: contain;
