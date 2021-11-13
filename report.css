@@ -8,39 +8,6 @@
   height: 100%;
   z-index: 0;
 }
-.form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  z-index: 1;
-}
-
-.fileLabel {
-  color: black;
-  height: 60px;
-  border-radius: 0.6rem;
-  width: 500px;
-  background-color: whitesmoke;
-  margin-top: 50px;
-  font-size: 20px;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  border: 1px solid black;
-}
-.fa-upload {
-  font-size: 1.6rem;
-}
-.fa-upload:hover {
-  transform: scale(0.8);
-}
-input[type="file"] {
-  display: none;
-}
-button[type="submit"] {
-  display: none;
-}
 .box,
 .box h1,
 .rp_title {
@@ -86,6 +53,64 @@ button[type="submit"] {
 .grid-container {
   z-index: 1;
   width: 100%;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  z-index: 1;
+}
+
+.fileLabel {
+  color: black;
+  margin-top: 50px;
+  font-size: 20px;
+  height: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  color: #6990f2;
+}
+.fa-cloud-upload-alt {
+  font-size: 2rem;
+  cursor: pointer;
+  color: #6990f2;
+}
+.fa-cloud-upload-alt:hover {
+  transform: scale(0.8);
+}
+input[type="file"] {
+  display: none;
+}
+button[type="submit"] {
+  display: none;
+}
+
+.wrapper {
+  width: 430px;
+  background: #fff;
+  border-radius: 5px;
+  padding: 30px;
+  box-shadow: 7px 7px 12px rgba(0, 0, 0, 0.05);
+}
+.wrapper form {
+  height: 167px;
+  display: flex;
+  margin: 30px 0;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 5px;
+  border: 2px dashed #6990f2;
+}
+.fileName {
+  color: black;
 }
