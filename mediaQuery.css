@@ -57,6 +57,9 @@
   .flip-card-back p {
     font-size: 0.8rem;
   }
+  .rp_box_title {
+    max-width: 20%;
+  }
 }
 @media (max-width: 440px) {
   .wrapper .center-line,
