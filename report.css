@@ -150,6 +150,12 @@ form .gender-details .gender-title {
   font-size: 20px;
   font-weight: 500;
   color: black;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
 }
 .state {
   color: black;
