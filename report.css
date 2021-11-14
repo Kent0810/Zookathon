@@ -266,3 +266,60 @@ button[type="submit"] {
     flex-direction: column;
   }
 }
+.content {
+  /* display: none; */
+}
+.recentBtn {
+  height: 45px;
+  margin: 15px 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+.top7 {
+  margin-top: 20px;
+}
+.recentReport_container {
+  display: none;
+  height: 1050px;
+  position: relative;
+  flex-direction: column-reverse;
+  align-items: center;
+  background: linear-gradient(135deg, #71b7e6, #a478b6);
+}
+.rp_box {
+  height: 130px;
+  width: 90%;
+  display: flex;
+  background: white;
+  margin-bottom: 20px;
+}
+.rp_box_title {
+  font-weight: 800;
+}
+.rp_box_date,
+.rp_box_location {
+  color: gray;
+  font-weight: 400;
+}
+.avatar {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  justify-content: center;
+  border-radius: 2rem;
+  background-color: tomato;
+  margin-right: 50px;
+}

@@ -48,69 +48,147 @@
                 <button type="submit1">Next</button>
             </form> -->
             <div class="container">
-                <div class="title">Please Fill In Information For The Form Belows</div>
                 <div class="content">
-                    <form class="form" id="myForm2">
-                        <div class="user-details">
-                            <div class="input-box">
-                                <span class="details">Full Name</span>
-                                <input type="text" class="input" name="inp_name" id="inp_name" placeholder="Enter your name" required>
+                    <div class="title">Please Fill In Information For The Form Belows</div>
+                    <div class="content">
+                        <form class="form" id="myForm2">
+                            <div class="user-details">
+                                <div class="input-box">
+                                    <span class="details">Full Name</span>
+                                    <input type="text" class="input" name="inp_name" id="inp_name" placeholder="Enter your name"
+                                        required>
+                                </div>
+                                <div class="input-box">
+                                    <span class="details">Phone Number</span>
+                                    <input type="text" class="input" name="inp_number" id="inp_number"
+                                        placeholder="Enter your number">
+                                </div>
+                                <div class="input-box">
+                                    <span class="details">Email</span>
+                                    <input type="text" class="input" name="inp_email" id="inp_email" placeholder="Enter your email">
+                                </div>
+                                <div class="input-box">
+                                    <span class="details">Location That You Find This</span>
+                                    <input type="text" class="input" name="inp_location" id="inp_location"
+                                        placeholder="Enter The Location">
+                                </div>
+                                <div class="input-box">
+                                    <span class="details">Date When You Last Seen</span>
+                                    <input type="date" class="input" name="inp_date" id="inp_date" required>
+                                </div>
+                                <div class="input-box">
+                                    <span class="details">Description</span>
+                                    <input type="text" class="input" name="inp_description" id="inp_description"
+                                        placeholder="Give Us Some Description" required>
+                                </div>
+                                <div class="input-box">
+                                    <span class="details">If You Found it On The Internet, Please Give Us the Link</span>
+                                    <input type="text" class="input" name="inp_link" id="inp_link"
+                                        placeholder="Ex: https://example.com">
+                                </div>
                             </div>
-                            <div class="input-box">
-                                <span class="details">Phone Number</span>
-                                <input type="text" class="input" name="inp_number" id="inp_number" placeholder="Enter your number">
+                            <div class="gender-details">
+                                <input type="radio" name="status" id="dot-1">
+                                <input type="radio" name="status" id="dot-2">
+                                <input type="radio" name="status" id="dot-3">
+                                <span class="gender-title">State Of The Wild Animals?</span>
+                                <div class="category">
+                                    <label for="dot-1">
+                                        <span class="dot one"></span>
+                                        <span class="state">Alive</span>
+                                    </label>
+                                    <label for="dot-2">
+                                        <span class="dot two"></span>
+                                        <span class="state">Death</span>
+                                    </label>
+                                    <label for="dot-3">
+                                        <span class="dot three"></span>
+                                        <span class="state">Unsure</span>
+                                    </label>
+                                </div>
                             </div>
-                            <div class="input-box">
-                                <span class="details">Email</span>
-                                <input type="text" class="input" name="inp_email" id="inp_email" placeholder="Enter your email">
+                            <div class="button">
+                                <input type="submit" id="button" value="Sent">
                             </div>
-                            <div class="input-box">
-                                <span class="details">Location That You Find This</span>
-                                <input type="text" class="input" name="inp_location" id="inp_location" placeholder="Enter The Location">
-                            </div>
-                            <div class="input-box">
-                                <span class="details">Date When You Last Seen</span>
-                                <input type="date" class="input" name="inp_date" id="inp_date" required>
-                            </div>
-                            <div class="input-box">
-                                <span class="details">Description</span>
-                                <input type="text" class="input" name="inp_description" id="inp_description" placeholder="Give Us Some Description"
-                                    required>
-                            </div>
-                            <div class="input-box">
-                                <span class="details">If You Found it On The Internet, Please Give Us the Link</span>
-                                <input type="text" class="input" name="inp_link"
-
-                                id="inp_link" placeholder="Ex: https://example.com">
-
-                            </div>
-                           
-                        </div>
-                        <div class="gender-details">
-                            <input type="radio" name="status" id="dot-1">
-                            <input type="radio" name="status" id="dot-2">
-                            <input type="radio" name="status" id="dot-3">
-                            <span class="gender-title">State Of The Wild Animals?</span>
-                            <div class="category">                         
-                                <label for="dot-1">
-                                    <span class="dot one"></span>
-                                    <span class="state">Alive</span>
-                                </label>
-                                <label for="dot-2">
-                                    <span class="dot two"></span>
-                                    <span class="state">Death</span>
-                                </label>
-                                <label for="dot-3">
-                                    <span class="dot three"></span>
-                                    <span class="state">Unsure</span>
-                                </label>
-                            </div>
-                        </div>
-                        <div class="button">
-                            <input type="submit" value="Sent">s
-                        </div>
-                    </form>
+                            <button type="button" class="recentBtn">
+                                Recent Report !
+                            </button>
+                        </form>
+                    </div>
                 </div>
+                <div class="recentReport_container" style="color: black;">
+                    <div class="rp_box top1">
+                        <div class="avatar">
+                            !
+                        </div>
+                        <div class="rp_info">
+                            <h1 class="rp_box_title"> </h1>
+                            <h2 class="rp_box_location"> </h2>
+                            <h2 class="rp_box_date"></h2>
+                        </div>
+                    </div>
+                    <div class="rp_box top2">
+                        <div class="avatar">
+                            !
+                        </div>
+                        <div class="rp_info">
+                            <h1 class="rp_box_title"> </h1>
+                            <h2 class="rp_box_location"> </h2>
+                            <h2 class="rp_box_date"></h2>
+                        </div>
+                    </div>
+                    <div class="rp_box top3">
+                        <div class="avatar">
+                            !
+                        </div>
+                        <div class="rp_info">
+                            <h1 class="rp_box_title"> </h1>
+                            <h2 class="rp_box_location"> </h2>
+                            <h2 class="rp_box_date"></h2>
+                        </div>
+                    </div>
+                    <div class="rp_box top4">
+                        <div class="avatar">
+                            !
+                        </div>
+                        <div class="rp_info">
+                            <h1 class="rp_box_title"> </h1>
+                            <h2 class="rp_box_location"> </h2>
+                            <h2 class="rp_box_date"></h2>
+                        </div>
+                    </div>
+                    <div class="rp_box top5">
+                        <div class="avatar">
+                            !
+                        </div>
+                        <div class="rp_info">
+                            <h1 class="rp_box_title"> </h1>
+                            <h2 class="rp_box_location"> </h2>
+                            <h2 class="rp_box_date"></h2>
+                        </div>
+                    </div>
+                    <div class="rp_box top6">
+                        <div class="avatar">
+                            !
+                        </div>
+                        <div class="rp_info">
+                            <h1 class="rp_box_title"> </h1>
+                            <h2 class="rp_box_location"> </h2>
+                            <h2 class="rp_box_date"></h2>
+                        </div>
+                    </div>
+                    <div class="rp_box top7">
+                        <div class="avatar">
+                            !
+                        </div>
+                        <div class="rp_info">
+                            <h1 class="rp_box_title"> </h1>
+                            <h2 class="rp_box_location"> </h2>
+                            <h2 class="rp_box_date"></h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
             </div>
         </div>
 
