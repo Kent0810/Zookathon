@@ -337,5 +337,6 @@ button[type="submit"] {
   border-radius: 2rem;
   background-color: tomato;
   margin-top: 40px;
+  margin-left: 10px;
   margin-right: 50px;
 }
