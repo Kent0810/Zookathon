@@ -48,11 +48,8 @@ btn.addEventListener("click",()=>{
 const myForm2 = document.getElementById('myForm2')
 
 myForm2.addEventListener('submit',function(e){
-
     e.preventDefault();
-
     const formData2 = new FormData(this);
-    
     fetch('report.php',{
         method:"POST",
         body: formData2

@@ -173,6 +173,49 @@ a {
     width: 400px;
   }
 }
+@media screen and (max-width: 400px) {
+  .infromation {
+    display: none;
+  }
+  .mainText {
+    width: 300px;
+  }
+  .mainText h1 {
+    font-size: 1.2rem;
+  }
+  .mainText p {
+    font-size: 0.8rem;
+  }
+  .mainContact > .mainH1 {
+    border: none;
+    font-size: 1.2rem;
+    width: 300px;
+  }
+  .mainContact > .mainH1 > span {
+    border: none;
+    font-size: 1.2rem;
+  }
+  .topHeader > .contact_title {
+    font-size: 1.5rem;
+  }
+  .box {
+    width: 200px;
+  }
+  .fa-bars {
+    margin-left: 10px;
+  }
+}
+@media screen and (max-width: 321px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+  .toggle {
+    margin-bottom: -50px;
+  }
+}
 /* Big Screen */
 @media screen and (min-width: 700px) {
   .toggle,

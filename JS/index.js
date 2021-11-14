@@ -57,7 +57,12 @@ function translate(){
         })
     }
     
-
+// let wrapper = document.querySelector(".about-us");
+// let but = document.querySelector(".btn");
+//     wrapper.style.display = "none";
+//     but.addEventListener("click",()=>{
+//         wrapper.style.display = "block";
+//     })
 // window.onload = () => {
 //     // setTimeout(()=>{
 //     //     transtion_el.classList.add('is-active')

@@ -67,6 +67,9 @@
   .wrapper .row {
     margin: 10px 0;
   }
+  .fa-bars {
+    margin-left: 10px;
+  }
 }
 @media screen and (min-width: 700px) {
   .toggle,
@@ -80,5 +83,16 @@
   }
   .report {
     background-attachment: fixed;
+  }
+}
+@media screen and (max-width: 321px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+  .text {
+    margin-top: 100px;
   }
 }
