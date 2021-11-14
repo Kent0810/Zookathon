@@ -23,11 +23,17 @@ a {
   text-decoration: none;
   color: white;
 }
-
-.ctcase {
-  width: 100%;
+.contactPage {
   display: flex;
   flex-direction: column;
+  align-content: center;
+}
+.ctcase {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
 }
 .header {
   width: 100%;
@@ -61,36 +67,28 @@ a {
   margin-bottom: 100px;
 }
 .mainContact {
-  height: 100vh;
-
-  width: 100vw;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
-.mainContact .mainH1 {
+.mainH1 {
   margin-top: 50px;
   margin-bottom: 50px;
   text-align: center;
   font-size: 2rem;
   color: #228b22;
   font-weight: 500;
+  width: 700px;
 }
-.mainContact h1 span {
+.mainH1 span {
   font-size: 2rem;
   border-bottom: 7px solid #e7a03c;
   display: inline-block;
   line-height: 0.5;
   z-index: -100;
 }
-.box_info {
-  display: flex;
-  flex-direction: column;
-  list-style: none;
-  width: 100%;
-  justify-content: space-around;
-  padding: 10px;
-}
+
 .mainText {
   width: 750px;
   display: flex;
@@ -116,4 +114,69 @@ a {
 }
 .box:hover {
   box-shadow: 0 0 11px rgba(20, 20, 20, 0.2);
+}
+.box_info {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  width: 100%;
+  justify-content: space-around;
+  padding: 10px;
+}
+/* SIDE BAR IN CONTACT */
+.fa-bars {
+  margin-left: 50px;
+  position: relative;
+  font-size: 1.8rem;
+  cursor: pointer;
+  z-index: 0;
+  color: white;
+}
+.sidebar {
+  position: fixed;
+  width: 200px;
+  top: 0;
+  bottom: 0;
+  right: -250px;
+  height: 100vh;
+  z-index: 5;
+  transition: all 0.8s ease;
+  background: white;
+}
+.sidebar header {
+  display: flex;
+  height: 100%;
+  padding: 0;
+  z-index: 5;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.fa-chevron-right {
+  color: black;
+  font-size: 1.8rem;
+  cursor: pointer;
+  user-select: none;
+}
+.title {
+  color: black;
+}
+/* Small Screen */
+@media screen and (max-width: 700px) {
+  .infromation {
+    display: none;
+  }
+  .mainText {
+    width: 400px;
+  }
+  .mainH1 {
+    width: 400px;
+  }
+}
+/* Big Screen */
+@media screen and (min-width: 700px) {
+  .toggle,
+  .sidebar {
+    display: none;
+  }
 }
