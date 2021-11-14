@@ -35,27 +35,86 @@
         </div>
         <video src="./Video/videoplayback_4.mp4" muted loop autoplay></video>
         <div class="overlay"></div>
-        <div class="rp_title">
-            <h1>Mua Bán Động Vật Hoang Dã Là Hành Vi Vi Phạm Pháp Luật</h1>
-            <h1>Hãy Report Lại Với Chúng Tôi Những Hành Vi Bạn Cho Là Mua Bán Động Vật Hoang Dã Với Chúng Tôi</h1>
+        <div class="report-container">
+            <!-- 
+                <label for="inp_location">Enter The Location</label>
+                <input type="text" >
+                <label for="inp_date">Date When You Last Seen </label>
+                <input type="date" class="input" name="inp_date" id="inp_date">
+                <label for="inp_description">More Description</label>
+                <input type="text" class="input" name="inp_description" id="inp_description">
+                <label for="inp_link">If You Found it On The Internet, Please Give Us the Link</label>
+                <input type="text" class="input" name="inp_link" id="inp_link">
+                <button type="submit1">Next</button>
+            </form> -->
+            <div class="container">
+                <div class="title">Please Fill In Information For The Form Belows</div>
+                <div class="content">
+                    <form class="form" id="myForm2">
+                        <div class="user-details">
+                            <div class="input-box">
+                                <span class="details">Full Name</span>
+                                <input type="text" class="input" name="inp_name" id="inp_name" placeholder="Enter your name" required>
+                            </div>
+                            <div class="input-box">
+                                <span class="details">Phone Number</span>
+                                <input type="text" class="input" name="inp_number" id="inp_number" placeholder="Enter your number">
+                            </div>
+                            <div class="input-box">
+                                <span class="details">Email</span>
+                                <input type="text" class="input" name="inp_email" id="inp_email" placeholder="Enter your email">
+                            </div>
+                            <div class="input-box">
+                                <span class="details">Location That You Find This</span>
+                                <input type="text" class="input" name="inp_location" id="inp_location" placeholder="Enter The Location">
+                            </div>
+                            <div class="input-box">
+                                <span class="details">Date When You Last Seen</span>
+                                <input type="date" class="input" name="inp_date" id="inp_date" required>
+                            </div>
+                            <div class="input-box">
+                                <span class="details">Description</span>
+                                <input type="text" class="input" name="inp_description" id="inp_description" placeholder="Give Us Some Description"
+                                    required>
+                            </div>
+                            <div class="input-box">
+                                <span class="details">If You Found it On The Internet, Please Give Us the Link</span>
+                                <input type="text" class="input" name="inp_link" id="inp_link" placeholder="Confirm your password">
+                            </div>
+                           
+                        </div>
+                        <div class="gender-details">
+                            <input type="radio" name="gender" id="dot-1">
+                            <input type="radio" name="gender" id="dot-2">
+                            <input type="radio" name="gender" id="dot-3">
+                            <span class="gender-title">State Of The Wild Animals?</span>
+                            <div class="category">                         
+                                <label for="dot-1">
+                                    <span class="dot one"></span>
+                                    <span class="state">Alive</span>
+                                </label>
+                                <label for="dot-2">
+                                    <span class="dot two"></span>
+                                    <span class="state">Death</span>
+                                </label>
+                                <label for="dot-3">
+                                    <span class="dot three"></span>
+                                    <span class="state">Unsure</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="button">
+                            <input type="submit" value="Sent">
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
-        <div class="grid-container">       
-            <div class="box1 box">
-                <img src="./Image/mb1.jpg" alt="">
-                <h1>Buôn Bán Chồn tại VN</h1>
-            </div>
-            <div class="box2 box">
-                <img src="./Image/mb2.jpg" alt="">
-                <h1>Buôn Bán Tê Tê tại VN</h1>
-            </div>
-            <div class="box3 box">
-                <img src="./Image/mb3.jpg" alt="">
-                <h1>Săn Bắt Trái Phép Hổ </h1>
-            </div>
-        </div>
+
+
         <div class="wrapper">
             <form class="form" id="myForm">
-                <input type="file" id="inpFile">
+                <input type="file" id="inpFile" required>
                     <label class="fileLabel" for="inpFile">
                         Upload Your Image Here!
                     <button id="submit" type="submit">Submit Now</button>
@@ -64,10 +123,7 @@
                     </label>
                 </label>       
             </form>
-            <div class="fileName">
-                
-            </div>
-
+            <div class="fileName"></div>
         </div>
     </section>
     <div class="how-container">
