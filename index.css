@@ -50,16 +50,6 @@ a {
   z-index: 2;
   overflow-x: hidden;
 }
-.showcase video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  object-fit: cover;
-  opacity: 0.8;
-  width: 100%;
-  height: 100%;
-  z-index: 0;
-}
 .showcase header {
   position: absolute;
   top: 0;
@@ -71,6 +61,17 @@ a {
   align-items: center;
   justify-content: space-between;
 }
+.showcase video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  opacity: 0.8;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
 .sidebar {
   position: fixed;
   width: 200px;

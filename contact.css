@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,200&display=swap");
+body::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: #1e1e24;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: white;
+}
+* {
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.ctcase {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.header {
+  width: 100%;
+  padding: 40px 100px;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.infromation {
+  display: flex;
+  list-style: none;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.logo {
+  color: white;
+  font-size: 1.8rem;
+}
+.topHeader {
+  width: 100vw;
+  background: url(./Image/bg3.png);
+  background-attachment: fixed;
+}
+.topHeader h1 {
+  color: white;
+  text-align: center;
+  font-size: 3rem;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+.mainContact {
+  height: 100vh;
+
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mainContact .mainH1 {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 2rem;
+  color: #228b22;
+  font-weight: 500;
+}
+.mainContact h1 span {
+  font-size: 2rem;
+  border-bottom: 7px solid #e7a03c;
+  display: inline-block;
+  line-height: 0.5;
+  z-index: -100;
+}
+.box_info {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  width: 100%;
+  justify-content: space-around;
+  padding: 10px;
+}
+.mainText {
+  width: 750px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: left;
+}
+.mainText h1 {
+  font-weight: bolder;
+  color: #228b22;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 500;
+}
+.mainText p {
+  font-weight: lighter;
+}
+.listLink {
+  color: black;
+}
+.box:hover {
+  box-shadow: 0 0 11px rgba(20, 20, 20, 0.2);
+}
